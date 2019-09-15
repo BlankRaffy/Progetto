@@ -115,6 +115,7 @@ body {
 
 /* Add a gray background color and some padding to the footer */
 footer {
+	position: absolute;
   background-color: #6bff6b;
   padding: 25px;
 }
