@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>Special Children Farma & Volunteers </h1>      
+    <h2>Special Children Farma & Volunteers </h2>      
     <p></p>
   </div>
 </div>
