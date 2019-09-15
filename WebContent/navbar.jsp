@@ -24,8 +24,8 @@
       %>
       
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Accedi</a></li>
-		        <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-shopping-cart"></span> Carrello</a></li>
+		        <li><a href="#" data-toggle="modal" data-target="#myModallogin"><span class="glyphicon glyphicon-log-in"></span> Accedi</a></li>
+		        <li><a href="/Carrello.jsp"><span class="glyphicon glyphicon-shopping-cart"></span> Carrello</a></li>
 		      </ul>
       
       <% 
@@ -44,10 +44,10 @@
 </nav>
 
 <!-- Modal quando premo login -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+<div class="modal fade" id="myModallogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
   <div class="modal-dialog">
 	<div class="loginmodal-container">
-		<h1>Benvenuto</h1>
+		<h1 align="center">Benvenuto</h1>
 		<h3 align="center">Compila i campi per accedere al tuo account</h3><br>
 	  <form method="post" action="LoginServlet">
 		<input type="text" name="user" placeholder="Username">
