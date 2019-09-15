@@ -6,15 +6,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#chisiamo">Chi siamo?</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+        <li><a href="#assistenza">Assistenza</a></li>
       </ul>
+      
       <%@ page import="model.Utente" %>
       <% 
       		Utente u = (Utente) session.getAttribute("utente");
@@ -24,7 +24,8 @@
       %>
       
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		        <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Accedi</a></li>
+		        <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-shopping-cart"></span> Carrello</a></li>
 		      </ul>
       
       <% 
@@ -46,7 +47,8 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
   <div class="modal-dialog">
 	<div class="loginmodal-container">
-		<h1>Login to Your Account</h1><br>
+		<h1>Benvenuto</h1>
+		<h3 align="center">Compila i campi per accedere al tuo account</h3><br>
 	  <form method="post" action="LoginServlet">
 		<input type="text" name="user" placeholder="Username">
 		<input type="password" name="pass" placeholder="Password">
@@ -54,7 +56,7 @@
 	  </form>
 		
 	  <div class="login-help">
-		<a href="#">Register</a> - <a href="#">Forgot Password</a>
+		<a href="#">Registrati</a> - <a href="#">Password dimenticata?</a>
 	  </div>
 	</div>
 </div>

@@ -13,6 +13,7 @@
 
 	<%@ include file="navbar.jsp" %>
 	<%@ include file="jumpotron.jsp" %>
+	<%@ include file="content.jsp" %>
 	<%@ include file="footer.jsp" %>
 	
 </body>
