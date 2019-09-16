@@ -2,7 +2,7 @@
 	<div class="container-fluid text-center">
 		<div class="row">
 			<div class="col-md-3">
-				<img src="C:media/logo.jpg" class="img-responsive"
+				<img src="media\logo.png" class="img-responsive"
 					style="width: 100%" alt="Logo">
 			</div>
 			<div class="col-md-6">
