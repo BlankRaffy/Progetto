@@ -1,7 +1,7 @@
-<footer class="container-fluid text-center">
+<footer>
 
     <div class="row">
-    <div class="col-sm-5" allign = "center">
+    <div class="col-sm-6" allign = "center">
 <h1><strong>   Chi Siamo </strong></h1>
    Coniugando tradizione ed innovazione nasce<br>
   la farmacia <strong>Special Children Farma & Volunteers </strong> ,<br>
@@ -31,7 +31,7 @@
   <h4>numero operatori :</h4>  3334557890
    <h4>mailbox : </h4> <a>farmavolunter@farma.com</a>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-0">
       
     </div>
   </div>

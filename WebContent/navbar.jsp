@@ -56,7 +56,7 @@
 	  </form>
 		
 	  <div class="login-help">
-		<a href="#">Registrati</a> - <a href="#">Password dimenticata?</a>
+		<a href="register.jsp">Registrati</a> - <a href="#">Password dimenticata?</a>
 	  </div>
 	</div>
 </div>
