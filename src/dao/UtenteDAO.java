@@ -44,7 +44,7 @@ public class UtenteDAO
 
 			Statement st = conn.createStatement();
 			
-			st.executeUpdate("INSERT INTO utenti (Nome, Cognome, Telefono, Username, Password, Email, n ) VALUES ('" + u.getNome() + "','" + u.getCognome() + "','"+ u.getTelefono() + "', '" + u.getUsername() + "', '" + u.getPassword() + "', '" + u.getEmail() + "');");
+			st.executeUpdate("INSERT INTO farmacia.utente (Nome, Cognome, Telefono, Username, Password, Email, n ) VALUES ('" + u.getNome() + "','" + u.getCognome() + "','"+ u.getTelefono() + "', '" + u.getUsername() + "', '" + u.getPassword() + "', '" + u.getEmail() + "');");
 		
 		}
 		catch (SQLException e) {

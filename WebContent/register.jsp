@@ -8,7 +8,7 @@
 	<h1 align="center">Benvenuto</h1>
 	<h3 align="center">Compila i campi per accedere al tuo account</h3>
 	<br>
-	<form method="post" action="LoginServlet">
+	<form method="post" action="RegisterServlet">
 		<input type="text" name="nome" placeholder="Nome"> <br>
 		<input type="text" name="cognome" placeholder="Cognome"><br>
 		<input type="text" name="user" placeholder="Username"><br>
