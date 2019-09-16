@@ -1,4 +1,6 @@
 <nav class="navbar navbar-inverse">
+	<%@ page import="model.UserBean"%>
+
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -15,7 +17,6 @@
 				<li><a href="#assistenza">Assistenza</a></li>
 			</ul>
 
-			<%@ page import="model.UserBean"%>
 			<%
 				UserBean u = (UserBean) session.getAttribute("utente");
 
