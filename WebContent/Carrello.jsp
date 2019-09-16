@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/mycss.css"></head>
 <body>
 <%@ include file="navbar.jsp" %>
-
+ciao carrello
 <%@ include file="footer.jsp" %>
 
 </body>
