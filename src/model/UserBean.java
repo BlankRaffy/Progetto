@@ -1,8 +1,16 @@
-package logineser;
+package model;
 
 public class UserBean {
 
 	public UserBean() {
+	}
+	public UserBean(String user, String password, String nome, String cognome, String email) 
+	{
+		this.username = user;
+		this.password = password;
+		this.cognome =cognome;
+		this.nome = nome;
+		this.email = email;
 	}
 	
 	public String getNome() {
@@ -44,10 +52,8 @@ public class UserBean {
 
 	private String nome;
 	private String cognome;
-	private int telefono;
 	private String username;
 	private String password;
 	private String email;
-	
-
+	private int telefono;
 }

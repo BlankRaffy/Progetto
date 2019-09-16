@@ -3,13 +3,13 @@ package dao;
 import java.sql.*;
 
 import model.DB;
-import model.Utente;
+import model.UserBean;
 
 public class UtenteDAO 
 {	
-	public Utente login(String user, String pass) 
+	public UserBean login(String user, String pass) 
 	{
-		Utente u2 = null;
+		UserBean u2 = null;
 		
 		try 
 		{				
@@ -23,7 +23,7 @@ public class UtenteDAO
 			ResultSet result = ps.executeQuery();
 			
 			if (result.first()) 
-				u2 = new Utente(result.getString("username"), null); 
+				u2 = new UserBean(result.getString("username"), result.getString("password"), result.getString("nome"), result.getString("cognome"), result.getString("email")); 
 			
 			conn.close();
 			
@@ -36,7 +36,7 @@ public class UtenteDAO
 		return null;
 	}
 
-	public boolean registrazione(Utente u) 
+	public boolean registrazione(UserBean u) 
 	{
 		try
 		{
@@ -44,7 +44,7 @@ public class UtenteDAO
 
 			Statement st = conn.createStatement();
 			
-			st.executeUpdate("INSERT INTO utenti (username, password) VALUES ('" + u.getUser() + "', '" + u.getPassword() + "');");
+			st.executeUpdate("INSERT INTO utenti (Nome, Cognome, Telefono, Username, Password, Email, n ) VALUES ('" + u.getNome() + "','" + u.getCognome() + "','"+ u.getTelefono() + "', '" + u.getUsername() + "', '" + u.getPassword() + "', '" + u.getEmail() + "');");
 		
 		}
 		catch (SQLException e) {

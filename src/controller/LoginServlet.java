@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import dao.UtenteDAO;
-import model.Utente;
+import model.UserBean;
 
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
 		String user = request.getParameter("user");
 		String pass = request.getParameter("pass");
 
-		Utente u = new UtenteDAO().login(user, pass);
+		UserBean u = new UtenteDAO().login(user, pass);
 		request.getSession().setAttribute("utente", u);
 		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 		rd.forward(request, response);
