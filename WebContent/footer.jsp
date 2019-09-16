@@ -1,7 +1,7 @@
 <footer>
 
     <div class="row">
-    <div class="col-sm-6" id = "chisiamo" allign = "center">
+    <div class="col-sm-3" id = "chisiamo" allign = "center">
 <h1><strong>   Chi Siamo </strong></h1>
    Coniugando tradizione ed innovazione nasce<br>
   la farmacia <strong>Special Children Farma & Volunteers </strong> ,<br>
@@ -34,6 +34,7 @@
     <div class="col-sm-0">
       
     </div>
+    <div class="col-sm-3" > 
   </div>
 </div><br>
 </footer>
