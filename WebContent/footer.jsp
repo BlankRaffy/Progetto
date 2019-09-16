@@ -1,7 +1,7 @@
 <footer>
 
     <div class="row">
-    <div class="col-sm-6" allign = "center">
+    <div class="col-sm-6" id = "chisiamo" allign = "center">
 <h1><strong>   Chi Siamo </strong></h1>
    Coniugando tradizione ed innovazione nasce<br>
   la farmacia <strong>Special Children Farma & Volunteers </strong> ,<br>
@@ -14,7 +14,7 @@
   il sito offre  infatti a tutti la posaibilità di diventare volontari    </div>
   
   
-    <div class="col-sm-3" allign = "center"> 
+    <div class="col-sm-3" id = "contatti" allign = "center"> 
       <h1><strong>Contatti</strong></h1>
   gli operatori rispondono solo dalle <br>
   12:00-20:00 <br>
@@ -23,7 +23,7 @@
     </div>
     
     
-    <div class="col-sm-3" allign = "center"> 
+    <div class="col-sm-3" id ="assistenza" allign = "center"> 
       
   <h1><strong> Assistenza</strong></h1>
   gli operatori rispondono solo dalle <br>
