@@ -15,13 +15,12 @@
 				<li><a href="#assistenza">Assistenza</a></li>
 			</ul>
 
-			<%@ page import="model.Utente"%>
-			<% 
-      		Utente u = (Utente) session.getAttribute("utente");
-      		
-      		if(u == null)
-      		{
-      %>
+			<%@ page import="model.UserBean"%>
+			<%
+				UserBean u = (UserBean) session.getAttribute("utente");
+
+				if (u == null) {
+			%>
 
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="register.jsp"><span
@@ -30,18 +29,16 @@
 						class="glyphicon glyphicon-shopping-cart"></span> Carrello</a></li>
 			</ul>
 
-			<% 
-      		}
-      		else
-      		{
-      %>
+			<%
+				} else {
+			%>
 			<ul class="nav navbar-nav navbar-right navbar-brand">
 				Benvenuto
-				<%=u.getUser()%>
+				<%=u.getUsername()%>
 			</ul>
-			<% 
-      		}
-      %>
+			<%
+				}
+			%>
 		</div>
 	</div>
 </nav>
