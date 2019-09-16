@@ -11,7 +11,7 @@
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
+				<li class="active"><a href="index.jsp">Home</a></li>
 				<li><a href="#chisiamo">Chi siamo?</a></li>
 				<li><a href="#contatti">Contatti</a></li>
 				<li><a href="#assistenza">Assistenza</a></li>
@@ -34,7 +34,7 @@
 				} else {
 			%>
 			<ul class="nav navbar-nav navbar-right navbar-brand">
-				Benvenuto
+				
 				<%=u.getUsername()%>
 			</ul>
 			<%

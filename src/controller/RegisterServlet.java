@@ -31,7 +31,9 @@ public class RegisterServlet extends HttpServlet {
 
 		// creazione userbean e funzione di registrazione
 		UserBean u = new UserBean(user, password, nome, cognome, email);
-		new UtenteDAO().registrazione(u);
+		UtenteDAO a = new UtenteDAO();
+		a.registrazione(u);
+		
 
 	}
 

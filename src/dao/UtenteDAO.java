@@ -42,7 +42,7 @@ public class UtenteDAO
 		{
 			Connection conn = DB.getInstance().getConnection();
 
-			Statement st = conn.createStatement();
+	    Statement st = conn.createStatement();
 			
 			st.executeUpdate("INSERT INTO farmacia.utente (Nome, Cognome, Telefono, Username, Password, Email, n ) VALUES ('" + u.getNome() + "','" + u.getCognome() + "','"+ u.getTelefono() + "', '" + u.getUsername() + "', '" + u.getPassword() + "', '" + u.getEmail() + "');");
 		

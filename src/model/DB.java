@@ -9,7 +9,7 @@ public class DB
   private Connection connection;
   private String db_name = "farmacia";
   private String username = "root";
-  private String password = "iosonoio98";
+  private String password = "Raffaele99?";
   
   private String url = "jdbc:mysql://localhost:3306/" + db_name + "?useSSL=false";
 
