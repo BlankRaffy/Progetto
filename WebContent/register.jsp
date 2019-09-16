@@ -8,7 +8,7 @@
 <form action="LoginServlet">
 Username: <input type="text" placeholder="Insert username" name="user"> 
 Password: <input type="password" placeholder="Insert password" name="pass"> 
-<button type="submit"> Send! </button>
+<button type="submit"> Send </button>
 </form>
 </body>
 </html>
