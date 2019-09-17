@@ -18,21 +18,21 @@ import model.UserBean;
 public class RegisterServlet extends HttpServlet {
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doPost(request, response);
 
 		// all the get parameter
 		String nome = request.getParameter("nome");
 		String cognome = request.getParameter("cognome");
 		String username = request.getParameter("user");
-		String telefono = request.getParameter("telefono");
+		int telefono =  Integer.parseInt(request.getParameter("telefono"));
 		String email = request.getParameter("email");
-		String user = request.getParameter("user");
 		String password = request.getParameter("password");
+		 
 
 		// creazione userbean e funzione di registrazione
-		UserBean u = new UserBean(user, password, nome, cognome, email);
+		UserBean u = new UserBean(username, password, nome, telefono, cognome, email);
 		UtenteDAO a = new UtenteDAO();
 		a.registrazione(u);
+
 		
 
 	}

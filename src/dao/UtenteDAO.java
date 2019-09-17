@@ -23,7 +23,7 @@ public class UtenteDAO
 			ResultSet result = ps.executeQuery();
 			
 			if (result.first()) 
-				u2 = new UserBean(result.getString("username"), result.getString("password"), result.getString("nome"), result.getString("cognome"), result.getString("email")); 
+				u2 = new UserBean(result.getString("username"), result.getString("password"), result.getString("nome"),result.getInt("telefono"), result.getString("cognome"), result.getString("email")); 
 			
 			conn.close();
 			
@@ -38,6 +38,7 @@ public class UtenteDAO
 
 	public boolean registrazione(UserBean u) 
 	{
+
 		try
 		{
 			Connection conn = DB.getInstance().getConnection();
@@ -45,10 +46,12 @@ public class UtenteDAO
 	    Statement st = conn.createStatement();
 			
 			st.executeUpdate("INSERT INTO farmacia.utente (Nome, Cognome, Telefono, Username, Password, Email, n ) VALUES ('" + u.getNome() + "','" + u.getCognome() + "','"+ u.getTelefono() + "', '" + u.getUsername() + "', '" + u.getPassword() + "', '" + u.getEmail() + "');");
-		
+		    System.out.println("se sei qui funziona");
 		}
-		catch (SQLException e) {
+		catch (Exception e) {
 			System.out.println("Errore durante la connessione." + e.getMessage());
+		    System.out.println("se sei qui non funziona");
+
 			return false;
 		}
 		
