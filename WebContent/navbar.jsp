@@ -16,6 +16,13 @@
 				<li><a href="#contatti">Contatti</a></li>
 				<li><a href="#assistenza">Assistenza</a></li>
 			</ul>
+			<form class="navbar-form navbar-left" action="/action_page.php">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search"
+						name="search">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
 
 			<%
 				UserBean u = (UserBean) session.getAttribute("utente");
@@ -34,7 +41,7 @@
 				} else {
 			%>
 			<ul class="nav navbar-nav navbar-right navbar-brand">
-				
+
 				<%=u.getUsername()%>
 			</ul>
 			<%

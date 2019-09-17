@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="css/mycss.css">
 </head>
 <body>
-
 	<%@ include file="navbar.jsp"%>
-	<%@ include file="jumpotron.jsp"%>
-	<%@ include file="content.jsp"%>
+	<div id="index">
+		<%@ include file="jumpotron.jsp"%>
+		<%@ include file="content.jsp"%>
+	</div>
 	<%@ include file="footer.jsp"%>
 
 </body>

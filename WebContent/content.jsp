@@ -1,70 +1,77 @@
 <div class="container-fluid text-center">
-	<h3 align="center">Prodotti in offerta</h3>
+	<h2 align="center">Prodotti in offerta</h2>
 	<br>
 	<div class="row">
-		<div class="col-sm-3">
-			<p>Some text..(togli)</p>
-			<img src="https://placehold.it/150x80?text=IMAGE"
-				class="img-responsive" style="width: 100%" alt="Image">
-		</div>
-		<div class="col-sm-3">
+		<div class="col-md-3">
 			<p>Some text..</p>
 			<img src="https://placehold.it/150x80?text=IMAGE"
-				class="img-responsive" style="width: 100%" alt="Image">
+				class="img-responsive" alt="Image">
 		</div>
-		<div class="col-sm-3">
+		<div class="col-md-3">
 			<p>Some text..</p>
 			<img src="https://placehold.it/150x80?text=IMAGE"
-				class="img-responsive" style="width: 100%" alt="Image">
+				class="img-responsive" alt="Image">
 		</div>
-		<div class="col-sm-3">
+		<div class="col-md-3">
 			<p>Some text..</p>
 			<img src="https://placehold.it/150x80?text=IMAGE"
-				class="img-responsive" style="width: 100%" alt="Image">
+				class="img-responsive" alt="Image">
+		</div>
+		<div class="col-md-3">
+			<p>Some text..</p>
+			<img src="https://placehold.it/150x80?text=IMAGE"
+				class="img-responsive" alt="Image">
 		</div>
 	</div>
-	<div class="col-sm-3">
-		<p>Some text..</p>
-		<img src="https://placehold.it/150x80?text=IMAGE"
-			class="img-responsive" style="width: 100%" alt="Image">
+	<div class="row">
+		<div class="col-md-3">
+			<p>Some text..</p>
+			<img src="https://placehold.it/150x80?text=IMAGE"
+				class="img-responsive" alt="Image">
+		</div>
+		<div class="col-md-3">
+			<p>Some text..</p>
+			<img src="https://placehold.it/150x80?text=IMAGE"
+				class="img-responsive" alt="Image">
+		</div>
+		<div class="col-md-3">
+			<p>Some text..</p>
+			<img src="https://placehold.it/150x80?text=IMAGE"
+				class="img-responsive" alt="Image">
+		</div>
+		<div class="col-md-3">
+			<p>Some text..</p>
+			<img src="https://placehold.it/150x80?text=IMAGE"
+				class="img-responsive" alt="Image">
+		</div>
 	</div>
-	<div class="col-sm-3">
-		<p>Some text..</p>
-		<img src="https://placehold.it/150x80?text=IMAGE"
-			class="img-responsive" style="width: 100%" alt="Image">
+	<div class="row">
+		<div class="col-md-3">
+			<p>Some text..</p>
+			<img src="https://placehold.it/150x80?text=IMAGE"
+				class="img-responsive" alt="Image">
+		</div>
+		<div class="col-md-3">
+			<p>Some text..</p>
+			<img src="https://placehold.it/150x80?text=IMAGE"
+				class="img-responsive" alt="Image">
+		</div>
+		<div class="col-md-3">
+			<p>Some text..</p>
+			<img src="https://placehold.it/150x80?text=IMAGE"
+				class="img-responsive" alt="Image">
+		</div>
+		<div class="col-md-3">
+			<p>Some text..</p>
+			<img src="https://placehold.it/150x80?text=IMAGE"
+				class="img-responsive" alt="Image">
+		</div>
 	</div>
-	<div class="col-sm-3">
-		<p>Some text..</p>
-		<img src="https://placehold.it/150x80?text=IMAGE"
-			class="img-responsive" style="width: 100%" alt="Image">
-	</div>
-	<div class="col-sm-3">
-		<p>Some text..</p>
-		<img src="https://placehold.it/150x80?text=IMAGE"
-			class="img-responsive" style="width: 100%" alt="Image">
-	</div>
-</div>
-<div class="col-sm-3">
-	<p>Some text..</p>
-	<img src="https://placehold.it/150x80?text=IMAGE"
-		class="img-responsive" style="width: 100%" alt="Image">
-</div>
-<div class="col-sm-3">
-	<p>Some text..</p>
-	<img src="https://placehold.it/150x80?text=IMAGE"
-		class="img-responsive" style="width: 100%" alt="Image">
-</div>
-<div class="col-sm-3">
-	<p>Some text..</p>
-	<img src="https://placehold.it/150x80?text=IMAGE"
-		class="img-responsive" style="width: 100%" alt="Image">
-</div>
-<div class="col-sm-3">
-	<p>Some text..</p>
-	<img src="https://placehold.it/150x80?text=IMAGE"
-		class="img-responsive" style="width: 100%" alt="Image">
-</div>
-<br>
 
-<br>
-<br>
+	<br>
+	<div class="col-md-12" align="left">
+		<a href="magazine.jsp"><img src="media\magazine.png"
+			class="img-responsive" alt="Magazine"> </a>
+	</div>
+	<br>
+</div>
