@@ -15,7 +15,7 @@
 <body>
 	<%@ include file="navbar.jsp"%>
 	<h1 align="center">Benvenuto</h1>
-	<h3 align="center">Compila i campi per registrati(togli)</h3>
+	<h3 align="center">Compila i campi per registrati</h3>
 	<br>
 	<form method="post" action="RegisterServlet">
 		<input type="text" name="nome" placeholder="Nome"> <br> <input

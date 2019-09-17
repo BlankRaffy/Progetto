@@ -28,7 +28,7 @@
 	</form>
 	<div class="login-help">
 		<a href="register.jsp">Non hai un account? Registrati</a> - <a
-			href="#">Password dimenticata?(togli)</a>
+			href="#">Password dimenticata?</a>
 	</div>
 	<%@ include file="footer.jsp"%>
 </body>
