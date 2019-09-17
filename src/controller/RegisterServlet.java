@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+
 import dao.UtenteDAO;
 import model.UserBean;
 
@@ -23,7 +24,7 @@ public class RegisterServlet extends HttpServlet {
 		String nome = request.getParameter("nome");
 		String cognome = request.getParameter("cognome");
 		String username = request.getParameter("user");
-		int telefono =  Integer.parseInt(request.getParameter("telefono"));
+		int telefono =  Integer.parseInt( request.getParameter("telefono"));
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 		 

@@ -25,7 +25,7 @@
 		<input type="text" name="nome" placeholder="Nome"> <br> 
 		<input type="text" name="cognome" placeholder="Cognome"><br> 
 		<input type="text" name="user" placeholder="Username"><br> 
-		<input type="tel" name="telefono" placeholder="Numero Opzionale"><br>
+		<input type="number" name="telefono" placeholder="Numero Opzionale"><br>
 		<input type="email" name="email" placeholder="Email"><br>
 		<input type="password" name="pass" placeholder="Password"><br>
 		<input type="submit" name="Registrazione" class="login loginmodal-submit" >
