@@ -24,8 +24,8 @@
 			%>
 
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="register.jsp"><span
-						class="glyphicon glyphicon-log-in"></span> Accedi</a></li>
+				<li><a href="login.jsp"><span
+						class="glyphicon glyphicon-log-in"></span> Accedi(togli)</a></li>
 				<li><a href="Carrello.jsp"><span
 						class="glyphicon glyphicon-shopping-cart"></span> Carrello</a></li>
 			</ul>

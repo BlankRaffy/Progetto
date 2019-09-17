@@ -6,7 +6,7 @@
 					alt="Logo">
 			</div>
 			<div class="col-md-6">
-				<h2>Special Children Farma & Volunteers</h2>
+				<h2>Special Children Farma & Volunteers(togli)</h2>
 				<br>
 				<br>
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">

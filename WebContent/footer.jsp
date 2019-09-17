@@ -11,7 +11,7 @@
   <br> Special Children Farma & Volunteers fornisce <br> 
   oltre ai farmci  anche sostegno e aiuto alle <br> 
   persone  affate  da varie patologie.<br>
-  il sito offre  infatti a tutti la posaibilità di diventare volontari    </div>
+  il sito offre  infatti a tutti la posaibilità di diventare volontari  (togli)  </div>
   
   
     <div class="col-sm-3" id = "contatti" allign = "center"> 
