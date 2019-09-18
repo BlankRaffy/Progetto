@@ -13,7 +13,7 @@ public class UtenteDAO
 		
 		try 
 		{				
-			Connection conn = DB.getConnection();
+			Connection conn = DB.getInstance().getConnection();
 
 			PreparedStatement ps = conn.prepareStatement("SELECT username FROM utenti WHERE username = ? AND password = ?");
 
@@ -41,7 +41,7 @@ public class UtenteDAO
 
 		try
 		{
-			Connection conn = DB.getConnection();
+			Connection conn = DB.getInstance().getConnection();
 
 	    Statement st = conn.createStatement();
 			

@@ -1,61 +1,41 @@
 package model;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.util.LinkedList;
-import java.util.List;
+import java.sql.*;
 
-public class DB  {
+public class DB 
+{
+  // DATI ACCESSO DB
+  private static DB instance;
+  private Connection connection;
+  private String db_name = "farmacia";
+  private String username = "root";
+  private String password = "Raffaele99?";
+  
+  private String url = "jdbc:mysql://localhost:3306/" + db_name + "?useSSL=false";
 
-	private static List<Connection> freeDbConnections;
+  // caricamento dei driver
+  private DB() throws SQLException {
+    try {
+      Class.forName("com.mysql.cj.jdbc.Driver");
+      this.connection = DriverManager.getConnection(url, username, password);
+    } catch (ClassNotFoundException e) {
+      System.out.println("DB driver not found:" + e.getMessage());
+    }
+    }
+  
+   public Connection getConnection() 
+   {
+     return connection;
+   }
+   
+   public static DB getInstance() throws SQLException 
+   {
+        if (instance == null) {
+            instance = new DB();
+        } else if (instance.getConnection().isClosed()) {
+            instance = new DB();
+        }
 
-	static {
-		freeDbConnections = new LinkedList<Connection>();
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-		} catch (ClassNotFoundException e) {
-			System.out.println("DB driver not found:"+ e.getMessage());
-		} 
-	}
-	
-	private static synchronized Connection createDBConnection() throws SQLException {
-		Connection newConnection = null;
-		String ip = "localhost";
-		String port = "3306";
-		String db = "farmacia";
-		String username = "root";
-		String password = "Raffaele99?";
-
-		newConnection = DriverManager.getConnection("jdbc:mysql://"+ ip+":"+ port+"/"+db, username, password +"?useUnicode=true&useJDBCCompliantTimezoneShift=true&LegacyDatetimeCode=false&serverTimezone=UTC");
-
-		newConnection.setAutoCommit(false);
-		return newConnection;
-	}
-
-
-	public static synchronized Connection getConnection() throws SQLException {
-		Connection connection;
-
-		if (!freeDbConnections.isEmpty()) {
-			connection = (Connection) freeDbConnections.get(0);
-			freeDbConnections.remove(0);
-
-			try {
-				if (connection.isClosed())
-					connection = getConnection();
-			} catch (SQLException e) {
-				connection.close();
-				connection = getConnection();
-			}
-		} else {
-			connection = createDBConnection();		
-		}
-
-		return connection;
-	}
-
-	public static synchronized void releaseConnection(Connection connection) throws SQLException {
-		if(connection != null) freeDbConnections.add(connection);
-	}
+        return instance;
+   }
 }
